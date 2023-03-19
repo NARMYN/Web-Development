@@ -1,0 +1,85 @@
+/*It's best to put all the styles in a separate file and link html file to it.*/
+h1, h2, p {
+    text-align: center;
+}
+body { /*sets the bg color of body element to brownish color or use brown for brown*/
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif; /*You can change the font-family of text, to make it look different from the default font of your browser*/
+    padding: 20px;
+}
+.menu { /*menu is the class of div element we write .class-name*/
+    width: 80%; /*either <number>px in pixels or <number>% which sets width as <number> percentage of parent element*/
+    max-width: 500px; /*Add a max-width property to the class to prevent it from growing too wide*/
+    background-color: burlywood;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*or just use padding: 20px; if all the same like in above case*/
+}
+h1, h2 {
+    font-family: Impact, serif;/*Its boring to have all the font of same family. so this makes h1 and h2 of impact font*/
+}/*serif here is a fallback font which is used when Impact is not available*/
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 30px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+.established{
+    font-style: italic;
+}
+
+.flavor, .dessert{
+    text-align: left;
+    width: 75%;
+}
+.price{
+    text-align: right;
+    width: 25%;
+}
+.item p { /*You can style all the p elements nested anywhere in elements with a class named item like this:*/
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color:brown;/*changes the color of border of the divider*/
+    /*the hieght of the total hr is 2 + 1+1 where 1s are the border heights set at default*/
+}
+.bottom-line{
+    margin-top: 25px;
+}
+/*FOOTER*/
+footer {
+    font-size: 14px;
+}
+a {
+    color: black; /*The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.*/
+}
+/*You change properties of a link when the link has actually been visited by using a pseudo-selector
+that looks like a:visited { propertyName: propertyValue; }.*/
+a:visited { color: black;}
+/*You change properties of a link when the
+mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.*/
+a:hover { color: brown;}
+/*You change properties of a link when the
+link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.*/
+a:active {color: brown;}
+
+.address {
+    margin-bottom: 5px;
+}

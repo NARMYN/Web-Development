@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!--This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.-->
+<html lang="en"><!--specifies the language of the page as english-->
+    <head>
+        <meta charset="UTF-8"></meta><!--allows users to translate in their language-->
+        <title>SleepDeprivedPandas.org</title><!--This is what it shows in the tab as name of page-->
+    </head>
+    <body>
+        <h1>Sleep Deprived Pandas</h1>
+        <main>
+            <section>
+                <h2>What is Sleep Deprived Pandas?</h2>
+                
+                <!-- FOLLOWING IS TO BE EDITED-->
+                <p>Sleep Deprived Pandas is a one step solution to all your sciency needs.</p>
+                <p>Its an organisation aimed to enrich students with knowledge as well as developing their exam-solving skills</p>
+                
+                <!-- FOLLOWING TAG INSERTS AND IMAGE-->
+                <!-- src attribute specifies image's URL-->
+                <!-- alt attribute is img description when img fails to load-->
+                <img src="https://images.squarespace-cdn.com/content/v1/5ad9d1f9620b85b47733d350/1655398162358-CKATDBUNN88DSE7SAQ0L/animal-gc266dc69b_1920.jpg?format=1500w" alt="An image of sleep deprived panda" height="200" width="300">
+
+                <!-- Following is an anchor tag to link to other web pages-->
+                <!-- the target="_blank" opens the link iin another webpage-->
+                <p>
+                    Connect with us on <a href="https://www.instagram.com/sleepdeprivedpandas/" target="_blank">Instagram</a>!
+                </p>
+                <p>
+                    Click on me:
+                </p>
+                <a href="https://www.instagram.com/sleepdeprivedpandas/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Icon of Instagram" height="200" width="200">
+                </a>
+            </section>
+            <section>
+                <h2>What do have to Offer?</h2>
+                <p>Here we provide hands on learning experience specially designed to cater the needs of O/A Level students</p>
+                <p>This site contains walkthroughs of past paper questions and in depth deliverance of knowledge</p>
+                <h3>Cambridge O-Level Courses:</h3>
+                <ul><!--unordered list-->
+                    <li>Additional Mathematics</li>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Computer Science</li>
+                </ul>
+                <figure>
+                    <img src="https://images.olx.com.pk/thumbnails/249647471-240x180.jpeg" alt="Image of Olevel Past Papers">
+                    <figcaption>Walkthrough of <em>every</em> question available</figcaption>
+                    <!-- <em></em> tag is to emphasis the text(italic)-->
+                
+                </figure>
+                <h3>Cambridge A-Level Courses:</h3>
+                <ol><!--ordered list{items are numbered when displayed}-->
+                    <li>Further Mathematics</li>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Computer Science</li>
+                </ol>
+                <figure>
+                    <img src="https://res.cloudinary.com/afzalshad/image/upload/c_fill,g_auto,w_448,h_299,dpr_2/f_auto,q_auto/v1643706221/education3.jpg?_i=AA" alt="A student solving an exam paper" height="200" width="250">
+                    <figcaption>We provide help with <strong>every question</strong> so that you make <strong>no mistakes</strong></figcaption>
+                    <!-- strong tag is to indicate that some text is of strong importance or urgent. (bold)-->
+                </figure>
+            </section>
+            <section>
+                <h2>Fulfilling your needs</h2>
+                <form><!--has an action attribute indicating where the data should be sent-->
+                    <fieldset><!--The fieldset element is used to group related inputs and labels together in a web form-->
+                        <legend>What qualification level are you interested in?</legend><!--caption for the content in the fieldset-->
+
+                        <label><input type="radio" id="olevel" name="oalevel" value="olevel" checked> Ordinary Level</label> <!--type radio for MCQ type questions to choose one answer-->
+                        <!--label associates the text with the button. Id attribute is used to identify specific html elements-->
+                        <!-- the form data for the button is based on its name and value attributes. Without a value attribute the form data will include <button name>=on, which is not useful when you have multiple buttons.-->
+                        <label><input type="radio" id="alevel" name="oalevel" value="alevel"> Advanced Level</label>
+                        <!--name attribute has to be same for all radio elements for only one to be selected by user-->
+                    </fieldset>
+                    <fieldset>
+                        <legend>What subjects are you interested in?</legend>
+                        <input type="checkbox" id="math" name="subject" value="math" checked> Mathematics <!--checked attribute makes it prechecked-->
+                        <input type="checkbox" id="phy" name="subject" value="phy"> Physics
+                        
+                        <!--another way to associate text with checkbox element:-->
+                        <input type="checkbox" id="chem" name="subject" value="chem"> <label for="chem">Chemistry</label>
+                        <input type="checkbox" id="comp" name="subject" value="comp"> <label for="comp">Computer Science</label>
+                        <input type="checkbox" id="addmath" name="subject" value="addmath"> <label for="addmath">Additional/ Further Mathematics</label>
+                    </fieldset>
+                    <input type="text" name="username" placeholder="Enter your Name" required><!--Type: We can create may types of inputs using type attribute. Here we collect text input-->
+                    <!--Name: In order for a form's data to be accessed by the location specified in the action attribute,
+                        you must give the text field a name attribute and assign it a value to represent the data being submitted.
+                        For example, you could use the following syntax for an email address text field: <input type="text" name="email">.-->
+                    <!--Placeholder: This displays on the webpage and gives an idea of what kind of text to enter-->
+                    <!--required: Makes it mandatory to fill before submission(user cant submit form before entering the value)-->
+                   
+                    <button type="submit">Done</button><!--By default the button submits the form. (without writing type="submit")-->
+                </form><!--adds a web form to collect info from users-->
+            </section>
+        </main>
+        <footer>
+            <p>All Rights Reserved --- <a href="https://www.instagram.com/sleepdeprivedpandas/" target="_blank">SleepDeprivedPandas.org</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+.navbar {
+    height: 50px;
+    width: auto;
+    background-color: grey;
+    margin: auto auto;
+
+}
+.options{
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    height: 30px;
+    width: auto;
+}
+.icon{
+    height: 10px;
+    width: auto;
+}

@@ -1,0 +1,9 @@
+CHAPTER 1:
+    CSS: Cascading Style Sheet
+    Describes the presentation of a document
+    HTML --> foundation/ structure
+    CSS --> decoration/ appearance/ presentation
+    How to apply css to html?
+        External Style Sheet --> integrate into html via <link rel="stylesheet" href="link to the css dir"> element
+        Internal Style Sheet
+        Inline within element
